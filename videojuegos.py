@@ -43,7 +43,7 @@ class ArbolBinario:
 def imprimir_inorder(nodo):
     if nodo:
         imprimir_inorder(nodo.izquierda)
-        print(f'Título: {nodo.titulo}, Plataforma: {nodo.plataforma}, Año: {nodo.año}')
+        print(f'Titulo: {nodo.titulo}, Plataforma: {nodo.plataforma}, Año: {nodo.año}')
         imprimir_inorder(nodo.derecha)
 
 arbol_videojuegos = ArbolBinario()
@@ -52,7 +52,7 @@ arbol_videojuegos.insertar("Super Mario Odyssey", "Nintendo Switch", 2017)
 arbol_videojuegos.insertar("God of War", "PlayStation 4", 2018)
 arbol_videojuegos.insertar("The Witcher 3", "Multiplataforma", 2015)
 
-print("Árbol de videojuegos:")
+print("Arbol de videojuegos:")
 imprimir_inorder(arbol_videojuegos.raiz)
 
 # Busqueda binaria
